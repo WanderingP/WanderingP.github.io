@@ -68,7 +68,18 @@ aside {
 
 .responsive {
     background-color: white;
-    border-radius: 25px;
+    border-radius: 15px;
+    margin: 1em;
+}
+
+section.col.news{
+    margin: 1em;
+    width: auto;
+    position: relative;
+}
+
+.card{
+    border-radius: 15px;
 }
 
 
