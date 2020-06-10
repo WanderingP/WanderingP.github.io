@@ -1,6 +1,6 @@
 body {
-	background-color:lightgrey;
-	text-align: center;
+    background-color: lightgrey;
+    text-align: center;
 }
 
 
@@ -8,68 +8,92 @@ body {
    ====== Landing Page ====== 
    =========================== */
 
+
 /*SEARCH BAR*/
-.search
-{
-	overflow: auto;
 
+.search {
+    overflow: auto;
 }
 
-.search input[type="text"]
-{
-	border-radius: 10px;
-	border: 0px;
-	width: 67%;
-	padding: 10px 10px;
+.search input[type="text"] {
+    border-radius: 10px;
+    border: 0px;
+    width: 67%;
+    padding: 10px 10px;
 }
 
-.search input[type="text"]:focus
-{
-	outline: 0;
+.search input[type="text"]:focus {
+    outline: 0;
 }
 
-.search input[type="submit"]
-{
-	border: 0px;
-	background: none;
-	background-color: #4a9feb;
-	color: #fff;
-	padding: 10px;
-    cursor:pointer;
+.search input[type="submit"] {
+    border: 0px;
+    background: none;
+    background-color: #4a9feb;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
 }
 
 
 /*Search Box*/
-@media only screen and (min-width : 150px) and (max-width : 780px)
-{
-	.search
-	{
-		width: 95%;
-		margin: 0 auto;
-	}
 
+@media only screen and (min-width: 150px) and (max-width: 780px) {
+    .search {
+        width: 95%;
+        margin: 0 auto;
+    }
 }
+
 
 /*BUTTONS*/
-.bg-primary{
-	background-color:#4a9feb !important;
+
+.bg-primary {
+    background-color: #4a9feb !important;
 }
 
-.btn-primary{
-	background-color:#4a9feb !important;
+.btn-primary {
+    background-color: #4a9feb !important;
 }
+
 
 /*ASIDE*/
-aside{
-	margin-left:1.5em;
+
+aside {
+    margin-left: 1.5em;
 }
+
+
 /*LANDING PAGE MAIN CONTENT*/
-.responsive{
-	background-color: white;
-	border-radius: 25px;
+
+.responsive {
+    background-color: white;
+    border-radius: 25px;
 }
 
 
 /* =======c====================
    ====== Contact Form ====== 
    =========================== */
+/*	makes textarea message fixed and non-resizable */
+#input-message {
+    text-align: left;
+    margin: 5px;
+    height: 150px;
+    width: 350px;
+    resize: none;
+}
+/*	makes textarea message fixed and non-resizable */
+#rating-message {
+    text-align: left;
+    margin: 5px;
+    height: 250px;
+    width: 350px;
+    resize: none;
+}
+
+.carouselcontainer{
+margin: 0 auto;
+max-width:1024px;
+width:100%;
+}
