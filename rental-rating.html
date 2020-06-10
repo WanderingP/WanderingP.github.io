@@ -1,79 +1,81 @@
-<html lang = "en">
-	<head>
-		<meta charset = "UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-		<title>Rate Your Rental</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="indeStyles.css" />
-	</head>
-	<body>
-		<nav id = "info" class="navbar navbar-expand-lg navbar-light bg-primary">
-  			<a class="navbar-brand" href="index.html">RateYour Rental</a>
-  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-  			</button>
+<html lang="en">
 
-  			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-					</li>
-						<a class = "nav-link active" href = "rental-rating.html">Rate</a>
-					<li>
-					<li>
-						<a class = "nav-link" href = "rental-review.html">Review</a>
-					</li>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Rate Your Rental</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="indeStyles.css" />
+</head>
 
-					  </li>
-					<li class = "nav-item">
-						<a class = "nav-link" href = "facts-page.html">Facts</a>
-					</li>
-					<li class = "nav-item">
-						<a class = "nav-link" href = "contact-page.html">Contact</a>
-					</li>
-				</ul>
-				<ul class="navbar-nav ml-auto">
-					<li class = "nav-item justify-content-end">
-						<a class = "nav-link" href = "#">Sign In</a>
-					</li>
-					<li class = "nav-item justify-content-end">
-						<a class = "nav-link" href = "#">Sign Up</a>
-					</li>
-					<li class = "nav-item justify-content-end">
-						<a class = "nav-link" href = "#">Sign Out</a><!--If logged in-->
-					</li>
-				</ul>
-			</div>
-          </nav>
-          
-          <div class="container">
-              <div class="row">
-                <div class="col"></div>
-                <div class="col-lg-8">
-                    <form action="#" method="get" id="better-rating-form">
-                        <input type="text" name="title" placeholder="Review Title" id="" required>
-                        <textarea name="review" id="" cols="30" rows="10" placeholder="Your review...." required></textarea>
-                        <div class="rating">
-                            <i class="fa fa-star" data-rate="1"></i>
-                            <i class="fa fa-star" data-rate="2"></i>
-                            <i class="fa fa-star" data-rate="3"></i>
-                            <i class="fa fa-star" data-rate="4"></i>
-                            <i class="fa fa-star" data-rate="5"></i>
-                            <input type="hidden" id="rating-count" name="rating" value="0">
-                        </div>
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
-                <div class="col"></div>
-            </div>
+<body>
+    <nav id="info" class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="index.html">RateYour</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                </li>
+                <!-- Disabled Rate link(you're here already)-->
+                <a class="nav-link disabled" href="rental-rating.html">Rate</a>
+                <li>
+                    <li>
+                        <a class="nav-link" href="rental-review.html">Review</a>
+                    </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="facts-page.html">Facts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-page.html">Contact</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item justify-content-end">
+                    <a class="nav-link" href="#">Sign In</a>
+                </li>
+                <li class="nav-item justify-content-end">
+                    <a class="nav-link" href="#">Sign Up</a>
+                </li>
+                <li class="nav-item justify-content-end">
+                    <a class="nav-link" href="#">Sign Out</a>
+                    <!--If logged in-->
+                </li>
+            </ul>
         </div>
-        
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-lg-8">
+                <form action="#" method="get" id="better-rating-form">
+                    <input type="text" name="title" placeholder="Review Title" id="" required>
+                    <!-- textarea 'id rating-message'(added in indeStyles.css) made non-resizable-->
+                    <textarea name="review" id="rating-message" cols="30" rows="10" placeholder="Your review...." required></textarea>
+                    <div class="rating">
+                        <i class="fa fa-star" data-rate="1"></i>
+                        <i class="fa fa-star" data-rate="2"></i>
+                        <i class="fa fa-star" data-rate="3"></i>
+                        <i class="fa fa-star" data-rate="4"></i>
+                        <i class="fa fa-star" data-rate="5"></i>
+                        <input type="hidden" id="rating-count" name="rating" value="0">
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <link href="star/css/better-rating.css" rel="stylesheet">
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">-->
+    <!--  updated jquery 3.3.1 to 3.5.1-->
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    </script>
+    <script src="star/js/better-rating.js"></script>
+    <script src="rentals.js"></script>
+</body>
 
-       
-          <link href="star/css/better-rating.css" rel="stylesheet">
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-            </script>
-            <script src="star/js/better-rating.js"></script>
-            <script src="rentals.js"></script>
-		  </body>
-		  </html>
+</html>
