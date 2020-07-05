@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>RateYourRental</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/better-rating.css">
+    <link rel="stylesheet" href="assets/css/Canito-Formulario-Comentarios.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/Responsive-Card-Item-List.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+        <div class="container"><a class="navbar-brand" href="index.html">RateYour</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Rentals&nbsp;</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="rentals-reviews.html">Read Reviews</a><a class="dropdown-item" role="presentation" href="rentals-rating.html">Rate Yours</a>
+                            <hr><a class="dropdown-item" role="presentation" href="#">Your Reviews</a></div>
+                    </li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="facts.html">Facts</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#" style="color: rgb(70,87,101);">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#" style="color: rgb(70,87,101);">My Account</a></li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
+                </ul><span class="navbar-text actions"> <a class="login" href="#">Log In</a><a class="btn btn-light action-button" role="button" href="#">Sign Up</a></span></div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-xl-12 offset-lg-1 offset-xl-0" style="margin-top: 20px;margin-bottom: 85px;">
+                <form id="better-rating-form" method="get">
+                    <h1 class="display-4 text-center" style="font-size: 45px;">Leave your review.</h1>
+                    <div class="form-row">
+                        <div class="col-sm-12 col-md-3 col-lg-4 col-xl-3"></div>
+                        <div class="col-9 col-sm-8 col-md-4 col-lg-4 col-xl-4 offset-1 offset-sm-2 offset-md-1 offset-lg-0 offset-xl-1 text-center"><label>Your rating
+    <div class="rating">
+        <i class="fa fa-star" data-rate="1"></i>
+        <i class="fa fa-star" data-rate="2"></i>
+        <i class="fa fa-star" data-rate="3"></i>
+        <i class="fa fa-star" data-rate="4"></i>
+        <i class="fa fa-star" data-rate="5"></i>
+        <input type="hidden" id="rating-count" name="rating" value="0">
+    </div>    
+</label>
+<iframe class="border-dark shadow-lg" allowfullscreen="" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDRV8NlIoCcNK0vbiYU-UaXxu7I_0TeGyk&amp;q=london%2Cuk&amp;zoom=11" width="100%"
+                                height="200" style="margin-top: 23px;"></iframe><label for="address-first-line" style="margin: 0px;margin-bottom: -15px;"><input class="shadow-lg form-control" type="text" data-toggle="tooltip" data-bs-tooltip="" data-placement="left" name="address-first-line" placeholder="First line of address" autofocus="" minlength="5" maxlength="30" required="" title="Enter the first line of the address in which you are reviewing."></label>
+                            <label
+                                for="address-town" style="margin-bottom: -15px;"><input class="shadow-lg form-control" type="text" data-toggle="tooltip" data-bs-tooltip="" data-placement="left" name="address-town" placeholder="City / Town" autofocus="" minlength="5" maxlength="30" required="" title="Enter the town, city, village or variety of, in which the property you are reviewing is located."></label>
+                                <label
+                                    for="address-county" style="margin-bottom: -15px;"><input class="shadow-lg form-control" type="text" data-toggle="tooltip" data-bs-tooltip="" data-placement="left" name="address-county" placeholder="County" autofocus="" minlength="5" maxlength="30" required="" title="Please enter the county the residence resides in."></label>
+                                    <label
+                                        for="address-postcode" style="margin-bottom: -15px;"><input class="shadow-lg form-control" type="text" data-toggle="tooltip" data-bs-tooltip="" data-placement="left" name="address-postcode" placeholder="Post Code" autofocus="" minlength="5" maxlength="30" title="Enter the post code for the address."></label>
+                                        <label
+                                            for="review-title"><input class="shadow-lg form-control" type="text" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" name="review-title" placeholder="Review Title" autofocus="" minlength="5" maxlength="30" style="margin-bottom: -15px;margin-top: 63px;"
+                                                required="" title="Every review must have a title. Name it something relevent!"></label><label for="review-years"><input class="form-control" type="text" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" name="review-years" placeholder="Years at address" autofocus="" required="" style="margin-bottom: -17px;" title="If you still live at the address, just put how long you've lived there up until now."></label>
+                                            <label
+                                                for="review-descript" style="margin-bottom: -20px;"><textarea class="shadow-lg form-control" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" name="review-descript" placeholder="Your review here...." rows="6" cols="23" spellcheck="true" autofocus=""
+                                                    minlength="20" maxlength="560" required="" title="Write as much detail as you can! Please try to be fair and do not intentionally insult other human beings!! Do not mention whether the property is currently oocupied or mention a landlord or agent by name! "></textarea></label>
+                                                <label
+                                                    for="review-photo" style="margin-top: 18px;margin-bottom: 2px;">Photos?<input type="file" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" name="review-photo" multiple="" accept="image/*" style="margin-bottom: 14px;width: 215px;" title="For now we only accept photos of the outside area or close ups of a specific area! We hope to allow detailed views of inside properties soon! Your not required to add photos if you dont want to. If no image is included, we will find the most recent, freely available image found online.">
+                                                    <button
+                                                        class="btn" type="submit" style="background-color: rgb(86,198,198);color: rgb(255,255,255);width: 203px;">Submit&nbsp;</button>
+                                                        </label>
+                        </div>
+                        <div class="col-8 col-sm-12 col-md-3 col-lg-4 col-xl-3 offset-2 offset-sm-0 offset-md-1 offset-lg-0 offset-xl-1"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3></h3>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>Rate Your</h3>
+                        <p>Rate your rental or home and find the latest information on properties your interested in. Help increase living standards and individual accountability.&nbsp;<br>RateYour provides a platform that takes the russian roulette feeling
+                            out of signing a tenancy agreement or purchasing a new property.</p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">RateYour © 2020</p>
+            </div>
+        </footer>
+    </div><!--NEED TO GET AN API KEY - https://developers.google.com/maps/documentation/javascript/get-api-key-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&libraries=places&callback=initAutocomplete" async defer></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/better-rating.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
